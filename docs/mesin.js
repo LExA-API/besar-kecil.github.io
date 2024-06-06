@@ -87,9 +87,9 @@ function acak(){
             clearInterval;
             return;
         }
-        imgDadu1.setAttribute('src','/asset/img/' + gambarDadu1[i++] + '.png');
+        imgDadu1.setAttribute('src','./asset/img/' + gambarDadu1[i++] + '.png');
         if(i == gambarDadu1.length)i=0;
-        imgDadu2.setAttribute('src','/asset/img/' + gambarDadu2[i++] + '.png');
+        imgDadu2.setAttribute('src','./asset/img/' + gambarDadu2[i++] + '.png');
         if(i == gambarDadu2.length)i=0;
     },100);
 }
@@ -114,9 +114,9 @@ START.addEventListener('click',function(){
 
     setTimeout(function(){
         const imgDadu1 = document.querySelector('.dadu1');
-        imgDadu1.setAttribute('src','/asset/img/' + dadu1 + '.png');
+        imgDadu1.setAttribute('src','./asset/img/' + dadu1 + '.png');
         const imgDadu2 = document.querySelector('.dadu2');
-        imgDadu2.setAttribute('src','/asset/img/' + dadu2 + '.png');
+        imgDadu2.setAttribute('src','./asset/img/' + dadu2 + '.png');
         const hasil = gethasilAkhir(pil,dadu);
 
         if(hasil=='menang'){   
